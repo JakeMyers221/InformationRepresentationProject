@@ -1,0 +1,262 @@
+body {
+    background-image: url('images/background.png'); 
+    background-size: 300px 300px; 
+    background-repeat: repeat; 
+}
+
+.navbar {
+    background: linear-gradient(to right, #69001a, #9b1a29) !important;
+    border-bottom: 5px solid #dbb997;
+}
+
+.navbar-nav .nav-link {
+    color: #dbb997 !important; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C4A484 !important; 
+    text-decoration: bold; 
+}
+
+.carousel-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto; 
+    margin-right: 0; 
+    position: relative; 
+    margin-left: calc(auto - 40px); 
+    margin-right: 0; 
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #dbb997;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner, .carousel-item {
+    border-radius: 20px; 
+    background: linear-gradient(to right, #69001a, #9b1a29);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+.carousel-item img[src*="insert_image.jpg"] {
+    width: auto; 
+    height: 100%; 
+    max-height: 550px; 
+    object-fit: contain; 
+    margin: auto; 
+    display: block;
+}
+
+.carousel-item.active .carousel-control-prev-icon,
+.carousel-item.active .carousel-control-next-icon,
+.carousel-item.active .carousel-indicators button {
+    background-color: black !important; 
+}
+
+.carousel-inner {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+p {
+    padding: 20px;
+}
+
+img {
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(248, 248, 248, 0.6);
+}
+
+.artwort {
+    padding: 50px;
+}
+
+.about {
+    padding: 150px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-card {
+    background: linear-gradient(120deg, #9b1a29, #69001a);
+    padding: 40px;
+    width: auto;
+    max-width: 1000px;
+    min-height: 450px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid #dbb997;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    color: #dbb997;
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-card img {
+    width: 450px;
+    border-radius: 15px;
+}
+
+.about h2 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4),
+                 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-inventory {
+    background-color: #dbb997;
+    color: #9b1a29;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-inventory:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-inventory:active {
+    background-color: #69001a;
+    transform: translateY(1px);
+}
+
+.feature-slider {
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.feature-slider h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #69001a; 
+}
+
+.feature-slider p {
+    font-size: 1.2rem;
+    color: #69001a;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #dbb997;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card.large {
+    width: 350px;
+    min-height: 350px;
+}
+
+.card.small {
+    width: 280px;
+    min-height: 280px;
+}
+
+.card-content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3)); 
+}
+
+.card-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #dbb997; 
+}
+
+.card-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.card-wrapper a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+
+.inventory-page {
+    text-align: center;
+    padding: 100px;
+    color: #69001a;
+}
+
+
+.inventory-page h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.inventory-page p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.table-wrapper {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.available-artwork {
+    background: linear-gradient(120deg, #9b1a29, #69001a);
+    flex-grow: 1;
+    max-width: 800px;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid #dbb997;
+    color: #dbb997;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+.available-table {
+    flex-grow: 2;
+    max-width: 1000px;
+    padding: 50px;
+    padding-top: 0px;
+}
